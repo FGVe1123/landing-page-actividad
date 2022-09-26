@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PruebaController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,24 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('landingpage', function () {
-    return view('/landingpage');
-});
+
+Route::get('/landingpage', [PruebaController::class, 'landingpage']);
+
+Route::get('/contacto/{codigo?}', [PruebaController::class, 'contacto']);
+
+Route::post('/recibeFormContacto', [PruebaController::class, 'recibeFormContacto']);
 
 
-Route::get('contacto/{codigo?}', function ($codigo = null) {
- 
-    if(!empty($codigo) && $codigo == 1234){
-        //$usuario_principal = $usuario[$codigo];
-        $nombre = "victor ";
-        $correo = "correo@correo";
-        
-        
-    } else {
-        //$usuario_principal = null;
-        $nombre = " ";
-        $correo = " ";
-    }
-
-    return view('/contacto', compact('nombre', 'correo'));
-});

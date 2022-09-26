@@ -14,26 +14,41 @@
 <body>
 
     <div class="formulario">
-        <form  method="GET">
+        <form  action="/recibeFormContacto" method="POST">
+            @csrf <!-- input oculto, medida de seguridad-->
             <br>
+                <label for="nombre">Nombre </label><br>
+                <!--<input id="nombre" type="text" name="nombre" value={{$nombre}}> <br> carga valor default
+                <input id="correo" type="email" name="correo" value="{{$correo}}"><br>-->
 
-    
 
-        
-            
-                <label for="codigo">codigo<input id="codigo" type="text" name="codigo"></label>   <br>
-    
-                <label for="nombre">Nombre <input id="nombre" type="text" name="nombre" value={{$nombre}}> </label>   <br>
-            
-                <label for="correo">Correo <input id="correo" type="mail" name="correo" value="{{$correo}}"> </label>   <br>
-            
-                <label for="comentario">Comentario <input id="comentario" type="text" name="comentario"> </label>   <br>
+
+                <input id="nombre" type="text" name="nombre" value="{{ old('nombre') }}"> <br>
+                @error('nombre')
+                    <i>{{ $message }}</i>
+                @enderror
+                <br>
+                <label for="correo">Correo </label> <br>
+                <input id="correo" type="email" name="correo" value="{{ old('correo') }}"><br>
+                @error('correo')
+                    <i>{{ $message }}</i>
+                @enderror
+                <br>
+                <label for="comentario">Comentario </label> <br>
+
+                <textarea id="comentario" name="comentario"  cols="30" rows="10" value="{{ old('comentario') }}">
+                
+                </textarea><br>
+                @error('comentario')
+                    <i>{{ $message }}</i>
+                @enderror
+                <br>
+                <br>
+                <br>
              
-            
-    
-            <br>
+        
 
-            <button name="enviar" type="submit" >ENVIAR</button>
+                <input type="submit" value="ENVIAR">
 
            
         </form>

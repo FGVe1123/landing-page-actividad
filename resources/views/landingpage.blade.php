@@ -146,7 +146,7 @@
                     </div>
                     <ul class="footer-links list-reset">
                         <li>
-                            <a href="https://www.facebook.com">Contact</a>
+                            <a href="#">Contact</a> <!-- añadir enlaces para el proyecto-->
                         </li>
                         <li>
                             <a href="#">About us</a>
