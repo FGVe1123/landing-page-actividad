@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PruebaController;
+use App\Http\Controllers\ContactoController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,10 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/landingpage', [PruebaController::class, 'landingpage']);
+Route::get('/', function () {
+    return view('/landingpage');
+});
 
-Route::get('/contacto/{codigo?}', [PruebaController::class, 'contacto']);
+Route::get('/contacto/{codigo?}', [ContactoController::class, 'contacto']);
 
-Route::post('/recibeFormContacto', [PruebaController::class, 'recibeFormContacto']);
+Route::post('/recibeFormContacto', [ContactoController::class, 'recibeFormContacto']);
 
 

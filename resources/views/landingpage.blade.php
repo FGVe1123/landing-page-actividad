@@ -127,7 +127,7 @@
                             <h2 class="section-title mt-0">Get it and Switch</h2>
                             <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
 							<div class="cta-cta">
-								<a class="button button-primary" href="#">Buy it now</a>
+								<a class="button button-primary" href="/contacto">Contacto</a>
 							</div>
 					    </div>
                     </div>
