@@ -6,13 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>CONTACTO</title>
-    
 
-        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+        <link rel="stylesheet" href="switch/dist/css/style.css">
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
         
+        <div class=nav><a href="/"> <span> Landingpage </span> </a> </div>  
     </head>
-    <body>
 
+    <body>
+        
+    <center>
         <div class="formulario">
             <form  action="/recibeFormContacto" method="POST">
 
@@ -38,34 +42,32 @@
                <br>
 
                <label for="comentario">Comentario </label> <br>
-               <textarea id="comentario" name="comentario"  cols="30" rows="10" value="{{ old('comentario') }}">
-               </textarea><br>
+               <input id="comentario" type="comentario" name="comentario" value="{{ old('comentario') }} {{$comentario}}"><br>
                @error('comentario')
                    <i>{{ $message }}</i>
                @enderror
                <br>
-               <br>
-               <br>
-           
-       
-
+              
                <input type="submit" value="ENVIAR">
+
 
             
             </form>
             
-
             <!-- Ditectiva de blade @ -->
             
             @if(!empty($codigo))
                 
                 {{$nombre ??''}}
                 {{$correo ??''}}
-            
+                {{$comentario ??''}}
+
             @endif
             
         </div>
-        
+    </center>
+
+    
     </body>
 
 </html>

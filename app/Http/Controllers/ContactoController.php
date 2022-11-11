@@ -14,15 +14,16 @@ class ContactoController extends Controller
             //$usuario_principal = $usuario[$codigo];
             $nombre = "Victor Flores";
             $correo = "victor@correotest.com";
-            
+            $comentario="Bienvenido";
             
         } else {
             //$usuario_principal = null;
             $nombre = " ";
             $correo = " ";
+            $comentario=" ";
         }
     
-        return view('contacto', compact('nombre', 'correo'));
+        return view('contacto', compact('nombre', 'correo', 'comentario'));
     }
 
 
@@ -34,7 +35,7 @@ class ContactoController extends Controller
         $request->validate([
             'nombre' => ['required', 'max:255', 'min:2'],
             'correo' => ['required','email'],
-            'comentario' => 'required'
+            'comentario'=>['required', 'max:255', 'min:10'],
         ]);
 
 

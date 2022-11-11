@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table-> string ('nombre');
             $table-> string ('correo');
-            $table-> text ('comentario');
+            $table-> string ('comentario');
             $table->timestamps ();
         });
     }

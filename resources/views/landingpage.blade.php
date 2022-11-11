@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Switch Template</title>
+    <title>Landing page</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
     <link rel="stylesheet" href="switch/dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -33,10 +33,10 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Landing template for startups</h1>
-	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+	                        <h1 class="hero-title mt-0">Landing Page y Formulario de Contacto</h1>
+	                        <p class="hero-paragraph">Proyecto para la materia Programación para internet</p>
 	                        <div class="hero-cta">
-								<a class="button button-primary" href="#">Buy it now</a>
+								<a class="button button-primary" href="/contacto">Contacto</a>
 								<div class="lights-toggle">
 									<input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
 									<label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
@@ -66,8 +66,8 @@
 					<div class="features-inner section-inner has-bottom-divider">
 						<div class="features-header text-center">
 							<div class="container-sm">
-								<h2 class="section-title mt-0">The Product</h2>
-	                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+								<h2 class="section-title mt-0">Alumno</h2>
+	                            <p class="section-paragraph">Flores García Victor Enrique</p>
 								<div class="features-image">
 									<img class="features-illustration asset-dark" src="switch/dist/images/features-illustration-dark.svg" alt="Feature illustration">
 									<img class="features-box asset-dark" src="switch/dist/images/features-box-dark.svg" alt="Feature box">
@@ -124,7 +124,7 @@
                 <div class="container-sm">
                     <div class="cta-inner section-inner">
                         <div class="cta-header text-center">
-                            <h2 class="section-title mt-0">Get it and Switch</h2>
+                            <h2 class="section-title mt-0">Landing Page y Formulario de Contacto</h2>
                             <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
 							<div class="cta-cta">
 								<a class="button button-primary" href="/contacto">Contacto</a>
@@ -146,7 +146,7 @@
                     </div>
                     <ul class="footer-links list-reset">
                         <li>
-                            <a href="#">Contact</a> <!-- añadir enlaces para el proyecto-->
+                            <a href="/contacto">Contact</a> <!-- añadir enlaces para el proyecto-->
                         </li>
                         <li>
                             <a href="#">About us</a>
