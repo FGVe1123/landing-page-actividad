@@ -13,7 +13,7 @@ class ContactoTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_inicio()
     {
         $response = $this->get('/');
 
@@ -24,4 +24,12 @@ class ContactoTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function test_contacto()
+    {
+        $response = $this->get('/contacto');
+        $response->assertStatus(200);
+        $response->assertSeeText(['Nombre', 'Correo', 'Comentario']);
+    }
+    //assert see text -> revisa los textos de la pagina, que estén
 }
