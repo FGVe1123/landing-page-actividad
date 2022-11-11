@@ -39,6 +39,7 @@ class ContactoController extends Controller
 
 
        Contacto::create($request->all());
+        //Crear modelo para el guardado de informacion
 
         return view('recibeFormContacto');
     }
